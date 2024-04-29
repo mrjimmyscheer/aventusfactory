@@ -242,7 +242,7 @@ li a {
     color: rgb(0, 0, 0);
 }
 
-button {
+.doelgroeptekstblok button {
     background: linear-gradient(90deg, rgba(98, 192, 209, 0.8) 2.66%, rgba(78, 210, 78, 0.85) 97.34%);
     color: #fff;
     font-size: large;

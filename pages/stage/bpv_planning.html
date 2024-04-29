@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="../../assets/styles/w3/w3.css">
+    <link rel="stylesheet" href="../../assets/styles/aventusfactory.css">
+    <link rel="stylesheet" href="../../assets/styles/bpv_planning.css">
+    <title>Aventus Factory - Student</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../assets/images/AventusLogo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../not_found.html">Middelbare<br>Scholieren</a></li>
+                <li><a href="../student.html" style="margin-top: 8px;">Studenten</a></li>
+                <li><a href="../not_found.html">Stage<br>bedrijven</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="breadcrumbs"><a href="../../index.html">Home</a> > <a href="./student.html">studenten</a> > <a href="../stage-informatie.html">stage informatie</a> > <a href="../stage/bpv_planning.html">BPV-planning</a></div>
+
+        <div class="w3-container">
+            <h2>BPV-planning</h2>
+          
+            <div class="bpv_planning_menu">
+              <button class="w3-button tablink w3-teal" onclick="openStep(event,'Start')">Start</button>
+              <button class="w3-button tablink" onclick="openStep(event,'Kennismakingsgesprek')">Kennismakingsgesprek</button>
+              <button class="w3-button tablink" onclick="openStep(event,'Tussenbeoordeling')">Tussenbeoordeling</button>
+              <button class="w3-button tablink" onclick="openStep(event,'Eindbeoordeling')">Eindbeoordeling</button>
+            </div>
+            
+            <div id="Start" class="w3-container step w3-animate-right">
+              <h2>Start van stage </h2>
+              <p>London is the capital city of England.</p>
+            </div>
+          
+            <div id="Kennismakingsgesprek" class="w3-container step w3-animate-right" style="display:none">
+              <h2>Kennismakingsgesprek</h2>
+              <p>Kennismakingsgesprek is the capital of Japan.</p>
+            </div>
+            <div id="Tussenbeoordeling" class="w3-container step w3-animate-right" style="display:none">
+              <h2>Tussenbeoordeling</h2>
+              <p>Tussenbeoordeling is the capital of Japan.</p>
+            </div>
+            <div id="Eindbeoordeling" class="w3-container step w3-animate-right" style="display:none">
+              <h2>Eindbeoordeling</h2>
+              <p>Eindbeoordeling is the capital of Japan.</p>
+            </div>
+          </div>
+
+
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-items">
+            <img src="../../assets/images/AventusLogo.png" alt="Logo">
+            <div class="vl"></div>
+            <p>Copyright 2023 Aventus</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function openStep(evt, stepName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("step");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+          }
+          document.getElementById(stepName).style.display = "block";
+          evt.currentTarget.className += " w3-blue";
+        }
+    </script>
+</body>
+
+</html>
