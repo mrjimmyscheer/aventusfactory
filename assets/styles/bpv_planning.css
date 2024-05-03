@@ -1,17 +1,61 @@
+
 .bpv_planning_menu{
     width: 100%;
-    row-gap: 20%;
     display: flex;
     flex-direction: row;
+    min-height: 50%;
 }
 
 .bpv_planning_menu button{
-    width: 100%;
+    max-width: 25%;
+    height: 10%;
     font-size: large;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
-    font-weight: 500;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
+.step{
+    margin-top: -40%;
+}
+
+.steps_container{
+    border: none;
+}
+
+
+.footer_bpv_planning hr{
+    border-top: none;
+}
+
+/* boxes */
+.bpv_planning_overview{
+display: flex;
+flex-direction: row;
+width: 96%;
+min-height: 500px;
+margin: 2%;
+gap: 10%;
+
+}
+.overview_info_child{
+width: 50%;
+}
+.bpv_planning_child{
+width:50%;
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .bpv_planning_overview {
+      flex-direction: column;
+    }
+    .bpv_planning_menu{
+        flex-direction: column;
+    }
+    .step{
+        margin-top: 0%;
+    }
+  }
