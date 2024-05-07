@@ -310,7 +310,7 @@ footer img {
     margin-left: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     * {
         font-family: "Ubuntu";
     }
@@ -383,7 +383,7 @@ footer img {
     }
 
     li {
-        margin-right: 50px;
+        margin-right: 45px;
     }
 
     li a {
@@ -403,14 +403,13 @@ footer img {
         margin-top: 35%;
         border-radius: 10px;
         box-shadow: 25px 25px 40px 5px rgba(0, 0, 0, 0.25);
-        height: 480px;
     }
 
     .afbeelding {
         flex: 1;
         height: 400px;
         width: 600px;
-        background-image: url("main-image.jpg");
+        background-image: url("../images/main-image.jpg");
         background-size: cover;
         background-position: center;
         display: none;
@@ -419,6 +418,8 @@ footer img {
     .tekstblok {
         flex: 1;
         margin-left: 25px;
+        width: 100%;
+        word-spacing: -2px;
     }
 
     .tekstblok h2 {
@@ -441,6 +442,7 @@ footer img {
         margin: 0;
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .tekstblok li {
@@ -475,7 +477,7 @@ footer img {
     .doelgroepafbeelding {
         height: 200px;
         width: 100%;
-        background-image: url("scholieren.jpg");
+        background-image: url("../images/scholieren.jpg");
         transform: scaleX(-1);
         border-radius: 10px;
         box-shadow: 25px 25px 40px 5px rgba(0, 0, 0, 0.25);
@@ -485,7 +487,7 @@ footer img {
         flex: 1;
         height: 200px;
         width: 100%;
-        background-image: url("studenten.jpg");
+        background-image: url("../../assets/images/studenten.jpg");
         transform: scaleX(-1);
         background-size: cover;
         background-position: center;
@@ -500,7 +502,7 @@ footer img {
         flex: 1;
         height: 200px;
         width: 100%;
-        background-image: url("stage-bedrijf.jpg");
+        background-image: url("../../assets/images/stage-bedrijf.jpg");
         transform: scaleX(-1);
         background-size: cover;
         background-position: center;
@@ -515,7 +517,7 @@ footer img {
         flex: 1;
         height: 200px;
         width: 100%;
-        background-image: url("aventus-algemeen.jpg");
+        background-image: url("../images/aventus-algemeen.jpg");
         background-size: cover;
         background-position: center;
         border-radius: 10px;
