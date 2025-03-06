@@ -19,7 +19,7 @@
 <body>
 
 <nav>
-
+    <img src="./assets/images/AventusLogo.png" alt="Aventus logo">
 </nav>
 
 
