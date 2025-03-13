@@ -1,13 +1,14 @@
 <?php
-$server = "localhost";
-$user = "wedotech";
-$pass = "QgAMLo03G#wKHBg8U8CT";
-$db = "wedotech"; 
+$env = parse_ini_file(__DIR__ . '/.env');
 
-$conn = new mysqli($server, $user, $pass, $db);
+$host = $env['DB_HOST'];
+$user = $env['DB_HOST'];
+$pass = $env['DB_HOST'];
+$db = $env['DB_HOST'];
+
+$conn = new mysqli($host, $user, $pass, $db);
 
 if ($conn->connect_error) {
-    die("Connection failed");
+    die("Connection failed: " . $conn->connect_error);
 }
-
 ?>
