@@ -1,3 +1,3 @@
 <?php
-echo "Hallo vanuit huidige studenten";
+    echo "Hallo vanuit huidige studenten";
 ?>
