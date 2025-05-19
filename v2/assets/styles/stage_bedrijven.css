@@ -1,0 +1,26 @@
+.main{
+    margin: 1.5%;
+    width: 60%;
+    scroll-behavior: smooth;
+}
+.main ul{
+    flex: 1;
+    flex-direction: column;
+}
+.main li{
+    list-style: circle;
+}
+
+.overzicht{
+    margin-top: 2%;
+}
+.kaartje{
+    width: 15%; 
+}
+
+
+@media (max-width: 700px) {
+    .kaartje{
+        width: 100%; 
+    }
+}
