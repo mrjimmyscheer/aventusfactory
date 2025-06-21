@@ -1,9 +1,6 @@
 <?php
-include 'meta.php';
-
 $baseLocalPage = 'http://localhost/wedotech/pages/';
 $baseLocal = 'http://localhost/wedotech/';
-
 $baseSecure = 'https://wedotech.nl/';
 
 // Router
@@ -19,6 +16,8 @@ if (!isset($parts[1]) || $parts[1] == '') {
 }
 
 $path = "views/" . $parts[1] . ".php";
+
+require_once 'meta.php';
 
 require_once "$views/partials/header.php";
 
