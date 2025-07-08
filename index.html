@@ -8,9 +8,55 @@
     <link rel="stylesheet" href="./assets/styles/aventusfactory.css">
     <link rel="stylesheet" href="./assets//styles/animate/animate.min.css">
     <title>We Do Tech</title>
+    <style>
+        #versionPopup {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+        }
+        #popupContent {
+          background: white;
+          padding: 30px;
+          border-radius: 10px;
+          text-align: center;
+          box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        .popupButton {
+          padding: 10px 20px;
+          margin: 10px;
+          font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
+
+<div id="versionPopup">
+  <div id="popupContent">
+    <h2>Kies een versie van WeDoTech</h2>
+    <button class="popupButton" onclick="goToOldVersion()">Oude versie</button>
+    <button class="popupButton" onclick="goToNewVersion()">Nieuwe versie</button>
+  </div>
+</div>
+
+<script>
+  function goToNewVersion() {
+    window.location.href = 'v3/index.html'; //
+    // blijf op huidige pagina of herlaad: location.href = 'index.html';
+  }
+
+  function goToOldVersion() {
+    document.getElementById('versionPopup').style.display = 'none';
+  }
+</script>
+
     <header>
         <div class="logo">
             <a href="index.html">
