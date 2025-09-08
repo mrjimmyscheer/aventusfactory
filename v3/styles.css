@@ -88,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #4a5568;
   transition: color 0.3s ease;
-  position: relative;
+  position: relative
+
 }
 
 .nav-link:hover {

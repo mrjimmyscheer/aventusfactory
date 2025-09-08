@@ -205,39 +205,6 @@ contactItems.forEach((item) => {
     })
   }
 })
-
-// Print functionality
-function printPage() {
-  window.print()
-}
-
-// Add print button to header (optional)
-document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".header-content")
-  const printBtn = document.createElement("button")
-  printBtn.innerHTML = "🖨️ Print"
-  printBtn.className = "print-btn"
-  printBtn.style.cssText = `
-        background: #667eea;
-        color: white;
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 0.875rem;
-        margin-left: 1rem;
-        display: none;
-    `
-
-  printBtn.addEventListener("click", printPage)
-
-  // Show print button on larger screens
-  if (window.innerWidth > 768) {
-    printBtn.style.display = "block"
-    header.appendChild(printBtn)
-  }
-})
-
 // Search functionality (basic)
 function createSearchBox() {
   const searchContainer = document.createElement("div")
