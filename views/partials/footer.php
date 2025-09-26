@@ -1,3 +1,6 @@
+
+  <script src="./scripts/collapsible.js"></script>
+  
   <footer class="bg-gray-100 mt-16">
     <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between md:text-left">
       <div class="mb-4">
