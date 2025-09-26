@@ -12,6 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://example.com/image.jpg">
     <meta property="og:description" content="Een website voor een ICT opleiding">
+    
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -44,3 +45,15 @@
         <li><a href="<?php echo $baseLocal; ?>stagebedrijven">Voor Bedrijven</a></li>
       </ul>
   </header>
+
+  <?php
+    if (isset($pageHeader, $pageImage)): 
+  ?>
+  
+  <div class="py-16 bg-gray-100" style="margin-bottom: 200px;">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="font-bold text-5xl" style="max-width: 200px; word-wrap: break-word;"><?= $pageHeader ?></h2>
+    </div>
+  </div>
+
+  <?php endif; ?>
