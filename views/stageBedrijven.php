@@ -1,28 +1,4 @@
-
 <style>
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-
 .pentagon {
   position: relative;
   width: 200px;
@@ -47,21 +23,32 @@
 
 </style>
 
+<!-- <div class="py-16 bg-gray-100" style="margin-bottom: 100px;">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-bold text-5xl" style="max-width: 200px; word-wrap: break-word;">Een stage is een win-win situatie</h2>
+  </div>
+</div> -->
+
 <div>
   home > Stagebedrijven
 </div>
 
-<div class="max-w-7xl mx-auto">
-  <button type="button" class="collapsible rounded-lg">Verwachtingen</button>
-  
-  <div class="content">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+<div class="max-w-7xl mx-auto mb-16">
+  <?php for ($i = 0; $i <= 5; $i++): ?>
+  <button type="button" class="collapsible w-full text-left px-4 py-4 text-white bg-gray-600 hover:bg-gray-700 rounded-lg text-base font-medium focus:outline-none">
+    Verwachtingen
+  </button>
+
+  <div class="content px-4 py-4 bg-gray-100 hidden">
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       Ducimus laborum optio, eum dignissimos qui non natus architecto ratione ea nulla.
-      </p>
+    </p>
   </div>
+  <?php endfor; ?>
 </div>
 
-<div class="max-w-7xl mx-auto">
+<div class="max-w-7xl mx-auto flex justify-center items-center">
   <div class="pentagon">
     <div class="pentagon-outline"></div>
     <img style="transform: rotate(-60deg);" src="./assets/images/femke_nijman.jpg" alt="Femke Nijman" draggable="false">
@@ -74,22 +61,3 @@
     <a href="#">06-12345678</a>
   </div>
 </div>
-
-
-
-<script>
-    var collapsible = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < collapsible.length; i++) {
-        collapsible[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-</script>
