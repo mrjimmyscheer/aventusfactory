@@ -1,4 +1,58 @@
 /* Reset and Base Styles */
+/* BPV Planning Toggle Cards */
+.bpv-planning-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.bpv-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+.bpv-card-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2d3748;
+  padding: 1.25rem 2rem 1.25rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+.bpv-card-toggle:hover {
+  background: #f7fafc;
+}
+.bpv-card-week {
+  font-size: 0.95rem;
+  color: #667eea;
+  font-weight: 500;
+}
+.bpv-card-content {
+  display: none;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #e2e8f0;
+  background: #f7fafc;
+  animation: fadeIn 0.3s;
+}
+.bpv-card.active {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+}
+.bpv-card.active .bpv-card-content {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 * {
   margin: 0;
   padding: 0;

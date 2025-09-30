@@ -1,4 +1,19 @@
 // Mobile menu functionality
+// BPV Planning toggle functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const bpvCards = document.querySelectorAll(".bpv-card");
+  bpvCards.forEach(card => {
+    const toggle = card.querySelector(".bpv-card-toggle");
+    toggle.addEventListener("click", () => {
+      // Collapse others
+      bpvCards.forEach(c => {
+        if (c !== card) c.classList.remove("active");
+      });
+      // Toggle current
+      card.classList.toggle("active");
+    });
+  });
+});
 const mobileMenuBtn = document.getElementById("mobile-menu-btn")
 const nav = document.getElementById("nav")
 
@@ -236,18 +251,32 @@ function createSearchBox() {
   })
 
   searchInput.addEventListener("input", (e) => {
-    const searchTerm = e.target.value.toLowerCase()
-    const textElements = document.querySelectorAll("p, h1, h2, h3, h4, li")
+    const searchTerm = e.target.value.toLowerCase();
+    const textElements = document.querySelectorAll("p, h1, h2, h3, h4, li");
+    let firstMatch = null;
 
     textElements.forEach((element) => {
-      const text = element.textContent.toLowerCase()
+      const text = element.textContent.toLowerCase();
       if (searchTerm && text.includes(searchTerm)) {
-        element.style.backgroundColor = "#fff3cd"
+        element.style.backgroundColor = "#fff3cd";
+        if (!firstMatch) firstMatch = element;
       } else {
-        element.style.backgroundColor = ""
+        element.style.backgroundColor = "";
       }
-    })
-  })
+    });
+
+    // Scroll to first match if found
+    if (firstMatch) {
+      const headerHeight = document.querySelector(".header")?.offsetHeight || 0;
+      const rect = firstMatch.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const targetPosition = rect.top + scrollTop - headerHeight - 20;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+    }
+  });
 
   searchContainer.appendChild(searchInput)
 
