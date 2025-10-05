@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeDoTech - BPV Portal - Software Development MBO Niveau 4</title>
-    <meta name="description" content="Centrale portal voor BPV informatie voor Software Development studenten van Aventus MBO niveau 4">
+    <meta name="description"
+        content="Centrale portal voor BPV informatie voor Software Development studenten van Aventus MBO niveau 4">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- Header -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
                     <div class="logo-icon">
-                                    <a href="./v3/index.html">
-                                        <img src="../assets/images/AventusLogo.png" alt="Logo">
-                                    </a>
+                        <a href="./index.html">
+                            <img src="../assets/images/AventusLogo.png" alt="Logo">
+                        </a>
                     </div>
                     <div class="logo-text">
                         <h1>WeDoTech - BPV Portaal</h1>
@@ -28,7 +31,6 @@
                         <li><a href="#requirements" class="nav-link">Eisen</a></li>
                         <li><a href="#evaluation" class="nav-link">Beoordeling</a></li>
                         <li><a href="#contacts" class="nav-link">Contact</a></li>
-                        <li><a href="#resources" class="nav-link">Documenten</a></li>
                     </ul>
                 </nav>
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
@@ -45,8 +47,8 @@
         <div class="container">
             <div class="hero-content">
                 <h2>WeDoTech BPV-Portaal</h2>
-                <p>Hey Software Developer van Aventus! 
-                    Alle informatie over je beroepspraktijkvorming op één plek. 
+                <p>Hey Software Developer van Aventus!
+                    Alle informatie over je beroepspraktijkvorming op één plek.
                     Vind eenvoudig wat je nodig hebt voor een succesvolle beroepspraktijkvorming (BPV).</p>
                 <div class="hero-cards">
                     <a href="#requirements" class="hero-card hero-card-link">
@@ -81,7 +83,7 @@
                         <p>Alle eisen voor een succesvolle beroepspraktijkvorming</p>
                     </div>
                 </div>
-                
+
                 <div class="requirements-grid">
                     <div class="requirement-card">
                         <h3><span class="icon">⏰</span> Tijdsduur & Planning</h3>
@@ -90,17 +92,20 @@
                             <li><span class="badge">BPV periode 2</span> 2 februari 2026 - 19 juni 2026</li>
                             <li><span class="badge">Duur BPV1</span> Minimaal 720 uur (20 weken)</li>
                             <li><span class="badge">Duur BPV2</span> Minimaal 648 uur (18 weken)</li>
-                            <li><span class="badge">Verlof BPV</span> In samenspraak met BPV-bedrijf plan je dit in.</li>
+                            <li><span class="badge">Verlof BPV</span> In samenspraak met BPV-bedrijf plan je dit in.
+                            </li>
                             <li><span class="badge">Werkomgeving</span> 4-5 dagen per week op stageplek</li>
                         </ul>
                     </div>
-                    
+
                     <div class="requirement-card">
                         <h3><span class="icon">🗒️</span> Begrippen om te weten</h3>
                         <ul>
                             <li><span class="badge">BPV</span> Beroepspraktijkvorming (stage).</li>
-                            <li><span class="badge">BPV docent</span>Docent vanuit school die begeleid & beoordeeld.</li>
-                            <li><span class="badge">BPV praktijkbegeleider</span>Begeleider & Beoordelaar vanuit bedrijf.</li>
+                            <li><span class="badge">BPV docent</span>Docent vanuit school die begeleid & beoordeeld.
+                            </li>
+                            <li><span class="badge">BPV praktijkbegeleider</span>Begeleider & Beoordelaar vanuit
+                                bedrijf.</li>
                             <li><span class="badge">BPV consulent</span>Aanspreekpunt stageovereenkomst Aventus</li>
                             <li><span class="badge">BPV Stagiair</span> Dit ben jij!</li>
 
@@ -110,23 +115,32 @@
 
                 <div class="documents-section">
                     <h3>Verplichte Documenten</h3>
-                    <p>Tijdens je stage zijn er verplichte documenten die voorwaardelijk zijn voor een beoordeling, hieronder tref je de documenten.</p>
+                    <p>Tijdens je stage zijn er verplichte documenten die voorwaardelijk zijn voor een beoordeling,
+                        hieronder tref je de documenten.</p>
                     <br>
                     <div class="document-cards">
                         <div class="document-card">
                             <div class="document-icon">📄</div>
                             <h4>BPV-overeenkomst</h4>
                             <p>Het document ter vaststelling van de stageovereenkomst tussen student en BPV-bedrijf.</p>
+                            <a href="https://aventus.sharepoint.com/:w:/s/Softwdev3LVMBDatabases15322023/EQvHYrQyGMhBgnW7D3bmAl8BN3bU54UZiD3SlRuSP8pWqw?e=OhhCtl"
+                                class="download-btn" download>Download</a>
                         </div>
-                        <div class="document-card">
+                        <div class="document-card" id="bpv-werkbestand-card">
                             <div class="document-icon">📚</div>
                             <h4>BPV-werkbestand</h4>
-                            <p>Centraal persoonlijk document voor het vastleggen van opdrachtomschrijving, invullen van beoordelingen en bijhouden van het logboek.</p>
+                            <p>Centraal persoonlijk document voor het vastleggen van opdrachtomschrijving, invullen van
+                                beoordelingen en bijhouden van het logboek.</p>
+                            <a href="https://aventus.sharepoint.com/:x:/s/Softwdev3LVMBDatabases15322023/EZ6QZD3bSX5KgvH46B0FJzkB29N9JE0pwZhyYa9kWQSRYQ?e=BCuibd"
+                                class="download-btn" download>Download</a>
                         </div>
                         <div class="document-card">
                             <div class="document-icon">📝</div>
                             <h4>Stageverslag</h4>
-                            <p>Jouw verslag van de werkzaamheden die zijn uitgevoerd tijdens de BPV.</p>
+                            <p>Jouw verslag van de werkzaamheden die zijn uitgevoerd tijdens de BPV. Je kan een Sjabloon
+                                downloaden!</p>
+                            <a href="../assets/documents/Stageverslag-template.docx" class="download-btn"
+                                download>Download Sjabloon</a>
                         </div>
                         <div class="document-card">
                             <div class="document-icon">📈</div>
@@ -152,7 +166,7 @@
                 <div class="tabs">
                     <div class="tab-buttons">
                         <button class="tab-btn active" data-tab="criteria">Beoordelingscriteria</button>
-                        <button class="tab-btn" data-tab="process">Beoordelingsproces</button>
+                        <button class="tab-btn" data-tab="process">Stageverslag</button>
                         <button class="tab-btn" data-tab="timeline">Planning</button>
                     </div>
 
@@ -161,18 +175,30 @@
                             <div class="criteria-grid">
                                 <h2>Beoordelingscriteria</h2>
                                 <br>
-                                <p>De BPV word beoordeeld aan de hand van de volgende verplichte criteria(documenten).</p>
+                                <p>De BPV word beoordeeld aan de hand van de volgende verplichte criteria(documenten).
+                                </p>
                                 <div class="criteria-card full-width">
                                     <h4>BPV-werkbestand</h4>
                                     <p>Binnen het BPV-werkbestand zijn de beoordelingscriteria voor BPV opgenomen
-                                        en is inzichtelijk aan welke eisen een opdracht dient te voldoen. 
+                                        en is inzichtelijk aan welke eisen een opdracht dient te voldoen. <br>
+                                        Het bpv-werkbestand is verdeeld in een aantal tabbladen, waarin:
+                                    <ul>
+                                        <li>De beoordeling kan worden opgesteld;</li>
+                                        <li>De stageopdracht kan worden geformuleerd;</li>
+                                        <li>Het Logboek kan worden bijgehouden.</li>
+                                    </ul>Je bent zelf verantwoordelijk voor het (tijdig) invullen van het
+                                    BPV-werkbestand, indien nodig met je praktijkbegeleider.
                                     </p>
                                     <br>
+                                   Ga naar de <a href="#bpv-werkbestand-card">download</a> hierboven om het BPV-werkbestand te downloaden.
                                 </div>
                                 <div class="criteria-card full-width">
                                     <h4>Stageverslag</h4>
                                     <p>Tijdens je stage werk je aan een stageverslag waarme je jouw stage verantwoord.
-                                        Dit is naast het bpv-werkbestand jouw bewijs voor het lopen van een succesvolle stage!
+                                        Dit is naast het bpv-werkbestand jouw bewijs voor het lopen van een succesvolle
+                                        stage! <br>
+                                        De onderdelen van het stageverslag kunnen worden terruggevonden in het tablad <a
+                                            href="#process">Stageverslag</a>. <br>Hierin zijn ook de opdrachten terug te vinden die <b>verplicht</b> zijn om te maken en op te nemen in het stageverslag
                                     </p>
                                     <br>
                                 </div>
@@ -180,12 +206,12 @@
                                     <h4>Logboek</h4>
                                     <p>Tijdens de stage is het belangrijk om jouw gemaakte uren te verantwoorden.
                                         Hierin omschrijf je per dag:
-                                        <ul>
-                                            <li>Welke werkzaamheden je hebt uitgevoerd</li>
-                                            <li>Wat je hebt geleerd</li>
-                                            <li>wat je eventueel de volgende keer kan verbeteren</li>
-                                        </ul>
-                                        Dit kan middels het BPV-werkbestand in een apart tabblad: logboek!
+                                    <ul>
+                                        <li>Welke werkzaamheden je hebt uitgevoerd</li>
+                                        <li>Wat je hebt geleerd</li>
+                                        <li>wat je eventueel de volgende keer kan verbeteren</li>
+                                    </ul>
+                                    Dit kan middels het BPV-werkbestand in een apart tabblad: <b>logboek</b>.
                                     </p>
                                     <br>
                                 </div>
@@ -193,139 +219,194 @@
                         </div>
 
                         <div class="tab-panel" id="process">
-                            <div class="process-steps">
-                                <div class="process-step">
-                                    <div class="step-number">1</div>
-                                    <div class="step-content">
-                                        <h4>BPV-overeenkomst</h4>
-                                        <p>Yes, je hebt een BPV-stageplek. Opstellen van de bpv-overeenkomst</p>
-                                    </div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">2</div>
-                                    <div class="step-content">
-                                        <h4>Startgesprek</h4>
-                                        <p>Verwachtingen en leerdoelen bespreken</p>
-                                </div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">2</div>
-                                    <div class="step-content">
-                                        <h4>Tussentijdse Evaluaties</h4>
-                                        <p>Tussentijdse beoordeling en terublik leerdoelen</p>
-                                    </div>
-                                </div>
-                                <div class="process-step">
-                                    <div class="step-number">3</div>
-                                    <div class="step-content">
-                                        <h4>Eindbeoordeling</h4>
-                                        <p>Finale evaluatie en cijfertoekenning</p>
-                                    </div>
-                                </div>
+                                <h2>Stageverslag</h2>
+                                <br>
+                                <p>Naast je werkzaamheden bij je BPV-bedrijf, werk je tijdens je stage ook aan
+                                    stageverslag en opdrachten vanuit
+                                    school.
+                                </p>
+                                <br>
+                            <div class="criteria-card full-width">
+                                <h4>Stageverslag inhoud</h4>
+                                <p>
+                                Het stageverslag is een belangrijk onderdeel van je stage. Het geeft inzicht in wat je
+                                hebt geleerd en hoe je je hebt ontwikkeld tijdens je stageperiode. Het verslag moet een 
+                                duidelijke structuur hebben en alle relevante informatie bevatten.<br>
+                                    <br>In je verslag komen de volgende onderdelen en opdrachten terug:<br><br>
+                                <ul>
+                                    <li>Voorblad</li>
+                                    <li>Automatische inhoudsopgave</li>
+                                    <li>Inleiding</li>
+                                    <li><a
+                                            href="https://aventus.sharepoint.com/:b:/s/Softwdev3LVMBDatabases15322023/EUUkhqRq7DpGl00geD-2JRgBelZfvu7-uRXSqjCDy4iaPA?e=vypbWr">Opdracht
+                                            1: Oriëntatie op het BPV-bedrijf</a></li>
+                                    <li><a
+                                            href="https://aventus.sharepoint.com/:b:/s/Softwdev3LVMBDatabases15322023/ESbdbaBXH11JqRoPi3w59KcBVXk2vk1Mel1MdoiVQHtytw?e=rXhNPw">Opdracht
+                                            2: Persoonlijk ontwikkelingsplan (POP) & plan van aanpak (PvA)</a></li>
+                                    <li>Uitwerking 3 stageopdrachten: het resultaat van je stage-opdrachten uit het
+                                        werkbestand</li>
+                                    <li>Verslag van het tussen- en eindgesprek</li>
+                                    <li>Conclusie van jouw stageperiode waarin je terugblikt op jouw doelstellingen en
+                                        ontwikkeling</li>
+                                    <li><a
+                                            href="https://aventus.sharepoint.com/:b:/s/Softwdev3LVMBDatabases15322023/EXpRfe0NhSdMg8_bdx0VpT8BWWJ9NpzD4ljhRchf7R7xdw?e=ZyRMhD">Bijlage 1: Uitwerking Burgerschap</a> <b>Alleen BPV1</b></li>
+                                </ul>
+                                <br>Zorg ervoor dat het verslag er netjes en verzorgd uitziet. Gebruik voor het schrijven van je verslag <a
+                                    href="https://aventus.sharepoint.com/:b:/s/Softwdev3LVMBDatabases15322023/EbK3f81hxbhHtyRG-Q2NwlcBfG3mkUhZTqPKGcYQyylB-g?e=GIlWLV">de
+                                    checklist schriftelijke rapportage</a>.
+
+                                <br>Of bekijk een voorbeeld stageverslag van een student van Aventus: <a
+                                    href="https://aventus.sharepoint.com/:w:/s/Softwdev3LVMBDatabases15322023/ER3T6znh4C9Pr9STpZlBCrYBAl3Bc13JvALuaodjK_TDmw?e=l23a3E">voorbeeld
+                                    stageverslag</a>
+                                </p>
                             </div>
+
+
                         </div>
 
                         <div class="tab-panel" id="timeline">
                             <div class="bpv-planning-cards">
                                 <!-- Step 1 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">👋 Start en kennismaken <span class="bpv-card-week">Week 1 & 2</span></button>
+                                    <button class="bpv-card-toggle">👋 Start en kennismaken <span
+                                            class="bpv-card-week">Week 1 & 2</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
-                                            <li>🔎 <strong>Lezen:</strong> Lees de hele planning en algemene stageinformatie op <a href="bpv_ik_loop_stage.html">'ik loop stage'</a> door.</li>
-                                            <li>✅ <strong>Doen #1 Mailen:</strong> Stel je BPV-docent van Aventus op de hoogte van je start met stage. BPV-docent niet bekend? Zoek contact op met jouw SLB.</li>
-                                            <li>✅ <strong>Doen #2 BPV-werkbestand:</strong> Begin met het invullen van het logboek in het BPV-werkbestand en houd dit dagelijks bij.</li>
-                                            <li>✅ <strong>Doen #3 BPV-werkbestand:</strong> Formuleer samen met je stagebeleider drie opdrachten die worden uitgevoerd tijdens de stage in het BPV-werkbestand.</li>
+                                            <li>🔎 <strong>Lezen:</strong> Lees de algemene planning, beoordelingscriteria en inhoud stageverslag
+                                                door.</li>
+                                            <li>✅ <strong>Doen #1 Mailen:</strong> Stel je BPV-docent van Aventus op de
+                                                hoogte van je start met stage. BPV-docent niet bekend? Zoek contact op
+                                                met jouw SLB.</li>
+                                            <li>✅ <strong>Doen #2 BPV-werkbestand:</strong> Begin met het invullen van
+                                                het logboek in het BPV-werkbestand en houd dit dagelijks bij.</li>
+                                            <li>✅ <strong>Doen #3 BPV-werkbestand:</strong> Formuleer samen met je
+                                                stagebeleider drie opdrachten die worden uitgevoerd tijdens de stage in
+                                                het BPV-werkbestand.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- Step 2 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">🏢 Orientatie op BPV-bedrijf <span class="bpv-card-week">Week 3 & 4</span></button>
+                                    <button class="bpv-card-toggle">🏢 Orientatie op BPV-bedrijf <span
+                                            class="bpv-card-week">Week 3 & 4</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
-                                            <li>🔎 <strong>Lezen:</strong> Lees de opdracht orientatie op BPV-bedrijf door.</li>
-                                            <li>✅ <strong>Doen #1:</strong> Maak de opdracht orientatie op BPV-bedrijf.</li>
-                                            <li>📧 <strong>Inleveren:</strong> Stuur de uitgewerkte opdracht naar je BPV-docent via mail.</li>
+                                            <li>🔎 <strong>Lezen:</strong> Lees de opdracht oriëntatie  op BPV-bedrijf
+                                                door.</li>
+                                            <li>✅ <strong>Doen #1:</strong> Maak de opdracht oriëntatie op BPV-bedrijf.
+                                            </li>
+                                            <li>📧 <strong>Inleveren:</strong> Stuur de uitgewerkte opdracht naar je
+                                                BPV-docent via mail.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- Step 3 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">📝 POP & PVA <span class="bpv-card-week">Week 3 & 4</span></button>
+                                    <button class="bpv-card-toggle">📝 POP & PVA <span class="bpv-card-week">Week 3 &
+                                            4</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
                                             <li>🔎 <strong>Lezen:</strong> Lees de opdracht POP & PVA door.</li>
-                                            <li>✅ <strong>Doen #1:</strong> Begin met de opdracht Persoonlijk opleidingsplan & Plan van aanpak.</li>
-                                            <li>📧 <strong>Inleveren:</strong> Stuur de uitgewerkte opdracht naar je BPV-docent via mail.</li>
+                                            <li>✅ <strong>Doen #1:</strong> Begin met de opdracht Persoonlijk
+                                                opleidingspla (POP) & Plan van aanpak (PVA).</li>
+                                            <li>📧 <strong>Inleveren:</strong> Stuur de uitgewerkte opdracht naar je
+                                                BPV-docent via mail.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- Step 4 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">🔄 Meedraaien in BPV-bedrijf <span class="bpv-card-week">Week 5 t/m 8</span></button>
+                                    <button class="bpv-card-toggle">🔄 Meedraaien in BPV-bedrijf <span
+                                            class="bpv-card-week">Week 5 t/m 8</span></button>
                                     <div class="bpv-card-content">
-                                        <p>Ondertussen ben je lekker aan het meedraaien in het BPV-bedrijf en werk je aan de eerder opgestelde opdrachten.</p>
+                                        <p>Ondertussen ben je lekker aan het meedraaien in het BPV-bedrijf en werk je
+                                            aan de eerder opgestelde opdrachten.</p>
                                     </div>
                                 </div>
                                 <!-- Step 5 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">📄 Concept stageverslag <span class="bpv-card-week">Week 9</span></button>
+                                    <button class="bpv-card-toggle">📄 Concept stageverslag <span
+                                            class="bpv-card-week">Week 9</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
-                                            <li>🔎 <strong>Lezen:</strong> Lees de verwachte inhoud van het stageverslag.</li>
-                                            <li>✅ <strong>Doen #1:</strong> Maak een concept-versie van het uiteindelijke stageverslag wat je gaat opleveren.</li>
-                                            <li>📧 <strong>Inleveren:</strong> Stuur de concept stageverslag naar je BPV-docent via mail.</li>
+                                            <li>🔎 <strong>Lezen:</strong> Lees de verwachte inhoud van het
+                                                stageverslag.</li>
+                                            <li>✅ <strong>Doen #1:</strong> Maak een concept-versie van het
+                                                uiteindelijke stageverslag wat je gaat opleveren.</li>
+                                            <li>📧 <strong>Inleveren:</strong> Stuur de concept stageverslag naar je
+                                                BPV-docent via mail.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- Step 6 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">⚖️ Tussenbeoordeling & Terugkomdag <span class="bpv-card-week">Week 10</span></button>
+                                    <button class="bpv-card-toggle">⚖️ Tussenbeoordeling & Terugkomdag <span
+                                            class="bpv-card-week">Week 10</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
-                                            <li>🔎 <strong>Lezen:</strong> Neem samen met jouw begeleider de beoordelingscriteria door in het BPV-werkbestand.</li>
-                                            <li>✅ <strong>Doen #1:</strong> Vul de tussentijdese beoordeling in met je praktijkbegeleider, zoals aangegeven in het BPV-werkbestand.</li>
-                                            <li>📧 <strong>Inleveren:</strong> Stuur het BPV-werkbestand met ingevulde tussenbeoordeling door naar je BPV-docent.</li>
+                                            <li>🔎 <strong>Lezen:</strong> Neem samen met jouw begeleider de
+                                                beoordelingscriteria door in het BPV-werkbestand.</li>
+                                            <li>✅ <strong>Doen #1:</strong> Vul de tussentijdese beoordeling in met je
+                                                praktijkbegeleider, zoals aangegeven in het BPV-werkbestand.</li>
+                                            <li>📧 <strong>Inleveren:</strong> Stuur het BPV-werkbestand met ingevulde
+                                                tussenbeoordeling door naar je BPV-docent.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- Step 7 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">🔄 Meedraaien & Stageverslag <span class="bpv-card-week">Week 11 t/m 17</span></button>
+                                    <button class="bpv-card-toggle">🔄 Meedraaien & Stageverslag <span
+                                            class="bpv-card-week">Week 11 t/m 17</span></button>
                                     <div class="bpv-card-content">
-                                        <p>Je blijft lekker bezig bij het BPV-bedrijf.<br><strong>Let op:</strong> ondertussen ben je ook aan het werken aan het definitieve stageverslag en verwerk je de feedback uit de tussenbeoordeling.</p>
+                                        <p>Je blijft lekker bezig bij het BPV-bedrijf.<br><strong>Let op:</strong>
+                                            ondertussen ben je ook aan het werken aan het definitieve stageverslag en
+                                            verwerk je de feedback uit de tussenbeoordeling.</p>
                                     </div>
                                 </div>
                                 <!-- Step 8 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">🏁 Eindbeoordeling <span class="bpv-card-week">Week 18</span></button>
+                                    <button class="bpv-card-toggle">🏁 Eindbeoordeling <span class="bpv-card-week">Week
+                                            18</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
-                                            <li>🔎 <strong>Lezen:</strong> Neem samen met jouw begeleider de beoordelingscriteria voor de eindbeoordeling door in het BPV-werkbestand.</li>
-                                            <li>✅ <strong>Doen #1:</strong> Vul de eindbeoordeling in met je praktijkbegeleider, zoals aangegeven in het BPV-werkbestand.</li>
-                                            <li>📧 <strong>Inleveren:</strong> Stuur het BPV-werkbestand met ingevulde eindbeoordeling door naar je BPV-docent, <strong>inclusief handtekeningen en datum</strong>.</li>
+                                            <li>🔎 <strong>Lezen:</strong> Neem samen met jouw begeleider de
+                                                beoordelingscriteria voor de eindbeoordeling door in het
+                                                BPV-werkbestand.</li>
+                                            <li>✅ <strong>Doen #1:</strong> Vul de eindbeoordeling in met je
+                                                praktijkbegeleider, zoals aangegeven in het BPV-werkbestand.</li>
+                                            <li>📧 <strong>Inleveren:</strong> Stuur het BPV-werkbestand met ingevulde
+                                                eindbeoordeling door naar je BPV-docent, <strong>inclusief
+                                                    handtekeningen en datum</strong>.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- Step 9 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">💡 Reflectie op eindbeoordeling <span class="bpv-card-week">Week 19</span></button>
+                                    <button class="bpv-card-toggle">💡 Reflectie op eindbeoordeling <span
+                                            class="bpv-card-week">Week 19</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
-                                            <li>🔎 <strong>Lezen:</strong> Neem de motivatie en beoordeling van jouw tussen en eindbeoordeling door.</li>
-                                            <li>✅ <strong>Doen #1:</strong> Vul je stageverslag aan met een hoofdstuk waarin je reflecteert naar de beoordeling van jouw stage en benadruk wat je in de toekomst gaat verbeteren.</li>
+                                            <li>🔎 <strong>Lezen:</strong> Neem de motivatie en beoordeling van jouw
+                                                tussen en eindbeoordeling door.</li>
+                                            <li>✅ <strong>Doen #1:</strong> Vul je stageverslag aan met een hoofdstuk
+                                                waarin je reflecteert naar de beoordeling van jouw stage en benadruk wat
+                                                je in de toekomst gaat verbeteren.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- Step 10 -->
                                 <div class="bpv-card">
-                                    <button class="bpv-card-toggle">✅ Afronden en herkansen <span class="bpv-card-week">Week 20</span></button>
+                                    <button class="bpv-card-toggle">✅ Afronden en herkansen <span
+                                            class="bpv-card-week">Week 20</span></button>
                                     <div class="bpv-card-content">
                                         <ul>
-                                            <li>📧 <strong>Inleveren #1:</strong> Stuur het BPV-werkbestand door naar je BPV-docent, <strong>inclusief handtekeningen en datum</strong>.</li>
-                                            <li>📧 <strong>Inleveren #2:</strong> Stuur het definitieve stageverslag door naar je BPV-docent.</li>
-                                            <li>📧 <strong>Inleveren #3:</strong> Stuur de opdracht van burgerschap naar je burgerschapsdocent (<strong>Dit is alleen een vereiste bij BPV1</strong>).</li>
+                                            <li>📧 <strong>Inleveren #1:</strong> Stuur het BPV-werkbestand door naar je
+                                                BPV-docent, <strong>inclusief handtekeningen en datum</strong>.</li>
+                                            <li>📧 <strong>Inleveren #2:</strong> Stuur het definitieve stageverslag
+                                                door naar je BPV-docent.</li>
+                                            <li>📧 <strong>Inleveren #3:</strong> Stuur de opdracht van burgerschap naar
+                                                je burgerschapsdocent (<strong>Dit is alleen een vereiste bij
+                                                    BPV1</strong>).</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -359,11 +440,13 @@
                                     <span>f.arnold@aventus.nl</span>
                                 </div>
                             </div>
-                            <p class="contact-description">Voor algemene vragen over BPV en het opstellen van de BPV-overeenkomst.</p>
+                            <p class="contact-description">Voor algemene vragen over BPV en het opstellen van de
+                                BPV-overeenkomst.</p>
                         </div>
                     </div>
                     <div class="contact-card">
-                        <div class="contact-avatar"><img src="../assets/images/woman_red_hair.png" alt="woman_red_hair" width="50px" height="50px"></div>
+                        <div class="contact-avatar"><img src="../assets/images/woman_red_hair.png" alt="woman_red_hair"
+                                width="50px" height="50px"></div>
                         <div class="contact-info">
                             <h3>Anita Faber</h3>
                             <p class="contact-role">Relatiebeheer BPV Software Developer</p>
@@ -373,7 +456,8 @@
                                     <span>a.faber@aventus.nl</span>
                                 </div>
                             </div>
-                            <p class="contact-description">Relatiebeheer voor acquisitie tussen (nieuwe) stagebedrijven en school.</p>
+                            <p class="contact-description">Relatiebeheer voor acquisitie tussen (nieuwe) stagebedrijven
+                                en school.</p>
                         </div>
                     </div>
                 </div>
@@ -381,13 +465,14 @@
         </section>
     </main>
     <footer>
-    <div class="footer">
-        <div class="container">
-            <p>&copy; 2024 Aventus. Alle rechten voorbehouden.</p>
-            <p>Versie 1.0 - Laatste update: December 2024</p>
+        <div class="footer">
+            <div class="container">
+                <p>&copy; 2025-2026 Aventus. Alle rechten voorbehouden.</p>
+                <p>Versie 2.0 - Laatste update: december 2024.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
