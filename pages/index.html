@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/aventusfactory.css">
+    <link rel="stylesheet" href="../assets//styles/animate/animate.min.css">
+    <title>We Do Tech - Homepage</title>
+    <style>
+        #versionPopup {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+        }
+        #popupContent {
+          background: white;
+          padding: 30px;
+          border-radius: 10px;
+          text-align: center;
+          box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+        .popupButton {
+          padding: 10px 20px;
+          margin: 10px;
+          font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="versionPopup">
+  <div id="popupContent">
+    <h2>Kies een versie van WeDoTech</h2>
+    <button class="popupButton" onclick="goToOldVersion()">Oude versie</button>
+    <button class="popupButton" onclick="goToNewVersion()">Nieuwe versie</button>
+  </div>
+</div>
+
+<script>
+  function goToNewVersion() {
+    window.location.href = '../index.html';
+    document.getElementById('versionPopup').style.display = 'none';
+  }
+
+  function goToOldVersion() {
+    document.getElementById('versionPopup').style.display = 'none';
+  }
+</script>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../assets/images/AventusLogo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./student.html">Huidige<br>Studenten</a></li>
+                <li><a href="./stage_bedrijven/stage_bedrijven.html">Bedrijven<br>Partners</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="animate__animated animate__fadeInLeft">
+        <div class="blok">
+            <div class="afbeelding"></div>
+            <div class="tekstblok">
+                <h2>We Do Tech</h2>
+                <p>Welkom op We Do Tech!<br>
+                    Dé plek voor studenten van Software Developer Aventus om info te vinden over stage.
+                    <br><br>
+                    Maak hieronder je keuze en ontdek wat we te bieden hebben!<br>
+                </p>
+                <ul>
+                    <li>
+                        <span class="pijl"></span>
+                        <a href="./student.html"><b>Huidige Studenten</b></a>
+                    </li>
+                    <li>
+                        <span class="pijl"></span>
+                        <a href="./stage_bedrijven/stage_bedrijven.html"><b>Bedrijven & Partners</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="doelgroepblok">
+            <div class="doelgroepafbeelding2"></div>
+            <div class="doelgroeptekstblok">
+                <h2>Huidige Studenten</h2>
+                <p>Op zoek naar de bpv-planning?<br>
+                    Of ben je bezig met je stage en op zoek naar info over bijvoorbeeld je verslag?<br>
+                    <br>
+                    Op deze pagina vind je alle info die je nodig hebt!
+                </p>
+                <button onclick="window.location.href = './student.html';">
+                    Meer info
+                    <span class="pijl"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="doelgroepblok">
+            <div class="doelgroepafbeelding3"></div>
+            <div class="doelgroeptekstblok">
+                <h2>Stagebedrijven</h2>
+                <p>Wilt u samenwerken met toekomstige software developers?<br>
+                    Of heeft u al een stagiair van Aventus?<br>
+                    <br>
+                    Op deze pagina vind u alle benodigde informatie voor stagebedrijven!
+                </p>
+                <button onclick="window.location.href = './stage_bedrijven/stage_bedrijven.html';">
+                    Meer info
+                    <span class="pijl"></span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer-items">
+            <img src="../assets/images/AventusLogo.png" alt="Logo">
+            <div class="vl"></div>
+            <p>Team CT | Design: Bram De Goeij & Anouk Wilderink <br> Design gerealiseerd tijdens keuzedeel grafisch ontwerp voor (web-) development!</p>
+        </div>
+    </footer>
+</body>
+
+</html>
