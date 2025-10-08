@@ -287,3 +287,11 @@ function createSearchBox() {
 
 // Initialize search box
 document.addEventListener("DOMContentLoaded", createSearchBox)
+
+// Voeg toe aan script.js
+document.querySelectorAll('.bpv-search-toggle').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const card = this.parentElement;
+    card.classList.toggle('active');
+  });
+});
