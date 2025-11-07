@@ -84,23 +84,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Download button functionality
-const downloadButtons = document.querySelectorAll(".download-btn")
-downloadButtons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    e.preventDefault()
-
-    // Get the document name from the parent card
-    const card = button.closest(".resource-card")
-    const documentName = card.querySelector("h4").textContent
-
-    // Show download notification
-    showNotification(`Download gestart: ${documentName}`)
-
-    // In a real implementation, this would trigger an actual download
-    // For demo purposes, we'll just show a notification
-  })
-})
 
 // Notification system
 function showNotification(message) {
